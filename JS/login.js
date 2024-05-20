@@ -10,7 +10,7 @@ const form = document.getElementById('loginForm');
 const controlloPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&]{8,}$/i;
 
 function login(event) {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault();
 
     if (nameUtente.value !== '' && surname.value !== '' && password.value !== '' && email.value !== '') {
         if (controlloPass()) {
