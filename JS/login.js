@@ -12,27 +12,23 @@ const controlloPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-
 function login(event) {
     event.preventDefault();
 
-    if (nameUtente.value !== '' && surname.value !== '' && password.value !== '' && email.value !== '') {
+    if (nameUtente.value !== '' && surname.value !== ''&& email.value !== '') {
         if (controlloPass()) {
             localStorage.setItem('nome', nameUtente.value);
             localStorage.setItem('cognome', surname.value);
             localStorage.setItem('email', email.value);
             localStorage.setItem('password', password.value);
             localStorage.setItem('ruolo', ruolo.value);
-        } else {
-            alert('Password non valida. Riprova.');
-        }
+            window.location.href ='../index.html';
+        } 
     } else {
         alert('I dati inseriti non sono corretti, riprova.');
     }
 }
 
-function logout() {
-    localStorage.clear();
-}
-
 function controlloPass() {
     if (password.value.match(controlloPassword)) {
+        document.getElementById("erroriPassword").innerHTML="";
         return true;
     } else {
         document.getElementById("erroriPassword").innerHTML = `<ul class="text-danger">
