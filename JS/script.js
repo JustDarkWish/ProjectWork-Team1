@@ -18,6 +18,7 @@ if (ruoloUtente==null) {
     loginUtente.addEventListener('click',logout);
     text.innerHTML=`Sezione Admin per creare e aggiungere eventi`;
     let redirect = document.createElement('button');
+    redirect.innerHTML="vai alla sezione pannello";
     text.appendChild(redirect);
     redirect.addEventListener('click',redirectPannello);
 }

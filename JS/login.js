@@ -18,7 +18,8 @@ function login(event) {
             localStorage.setItem('cognome', surname.value);
             localStorage.setItem('email', email.value);
             localStorage.setItem('password', password.value);
-            localStorage.setItem('ruolo','ROLE_USER');
+            localStorage.setItem('ruolo',ruolo.value);
+            console.log(ruolo.value);
             window.location.href ='../index.html';
         } 
     } else {
@@ -43,4 +44,3 @@ function controlloPass() {
 }
 
 form.addEventListener('submit', login);
-btnLogout.addEventListener('click', logout);
