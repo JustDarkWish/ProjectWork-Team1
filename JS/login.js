@@ -18,7 +18,7 @@ function login(event) {
             localStorage.setItem('cognome', surname.value);
             localStorage.setItem('email', email.value);
             localStorage.setItem('password', password.value);
-            localStorage.setItem('ruolo', ruolo.value);
+            localStorage.setItem('ruolo','ROLE_USER');
             window.location.href ='../index.html';
         } 
     } else {
