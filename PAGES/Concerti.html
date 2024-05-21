@@ -33,6 +33,7 @@
                       
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="Cinema.html">Cinema</a></li>
+                          <li><a class="dropdown-item" href="Mostra.html">Mostre</a></li>
                           <li><a class="dropdown-item" href="Concerti.html">Concerti</a></li>
                           <li><a class="dropdown-item" href="Teatro.html">Teatro</a></li>
                         </ul>
@@ -57,52 +58,48 @@
     </div>
     
    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
+   <!-- Bootstrap Bundle JS (includes Popper) -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-            slidesPerView: 1,
-
-            breakpoints: {
-                // 640: {
-                //   slidesPerView: 2,
-                //   spaceBetween: 20,
-                // },
-                768: {
-                    slidesPerView: 1,
-                    spaceBetween: 10, 
-                },
-                992: {
-                    slidesPerView: 2,
-                    spaceBetween: 10, 
-                },
-                1200: {
-                    slidesPerView: 3,
-                    spaceBetween: 10, 
-                },
-            },
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        });
-    </script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="../JS/concerto.js"></script>
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           const swiper = new Swiper('.swiper', {
+               // Optional parameters
+               direction: 'horizontal',
+               loop: true,
+               slidesPerView: 1,
+               breakpoints: {
+                   768: {
+                       slidesPerView: 1,
+                       spaceBetween: 10,
+                   },
+                   992: {
+                       slidesPerView: 2,
+                       spaceBetween: 10,
+                   },
+                   1200: {
+                       slidesPerView: 3,
+                       spaceBetween: 10,
+                   },
+               },
+               // If we need pagination
+               pagination: {
+                   el: '.swiper-pagination',
+               },
+               // Navigation arrows
+               navigation: {
+                   nextEl: '.swiper-button-next',
+                   prevEl: '.swiper-button-prev',
+               },
+               // And if we need scrollbar
+               scrollbar: {
+                   el: '.swiper-scrollbar',
+               },
+           });
+       });
+   </script>
+   <script src="../JS/concerto.js"></script>
 </body>
 </html>
