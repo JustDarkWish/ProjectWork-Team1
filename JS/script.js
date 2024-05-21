@@ -1,7 +1,7 @@
 let ruoloUtente = localStorage.getItem('ruolo');
 let loginUtente= document.getElementById('login');
 let text= document.getElementById('text');
-loginUtente.innerHTML=nomeUtente;
+loginUtente.innerHTML=ruoloUtente;
 if (ruoloUtente==null) {
     loginUtente.innerHTML="Login";
     loginUtente.addEventListener('click',login)

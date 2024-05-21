@@ -1,23 +1,27 @@
 let cardBody= document.querySelector('#cardBody');
 let btn=document.querySelector('#btnAltreInfo');
 
-let concerti=[];
+let concertiArray=[];
 
 function scegliConcerti() {
     let concerti='https://dummyjson.com/products/category/groceries'
     fetch(concerti)
     .then(response =>{
-        return response.json();
+        if (response != null) {
+            return response.json();
+        }else{
+            console.log("error response riga 10");
+        }
     })
     .then(prodotto=>{
-        concerti.push(prodotto);
-        stampa(prodotto);
-        console.log(concerti);
+        concertiArray.push(prodotto.products);
+        stampa(prodotto.products);
+        console.log(concertiArray);
     })
 }
 scegliConcerti();
-function stampa(concerti) {
-    concerti.forEach(concerto => {
+function stampa(concertiArray) {
+    concertiArray.forEach(concerto => {
         let card= `<div class="swiper-slide">
                                 <div class="card">
                                     <div class="imgProdotto" style="background-image: url(${concerto.thumbnail})"></div>
