@@ -21,6 +21,8 @@ body {
 }
 */
 
+/* SWIPER  */
+
 .swiper-pagination {
     position: absolute;
     bottom: -4px !important; /* Modifica questo valore per spostare i pallini più in basso o più in alto */
