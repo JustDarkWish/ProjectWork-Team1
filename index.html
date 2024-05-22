@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body data-bs-theme="dark">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -51,7 +51,6 @@
     <!-- HERO -->
     <section id="hero" class="position-relative container-fluid">
         <div class="title">
-            <h1>EVENTIA</h1> <img src="" alt="">
 
             <h2 id="text">Eventia è un progetto sviluppato da una giovane banda di programmatori che permette a chiunque
                 di poter creare e iscriversi ad eventi in giro per l'Italia, dagli spettacoli teatrali e di cabaret ai
@@ -64,24 +63,23 @@
     <div class="container text-center mt-5">
         <div class="swiper">
             <div class="swiper-wrapper">
-
                 <div class="swiper-slide">
                     <div class="card">
                         <img id="imgMusica" src="img/concerto.jpg" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="card-title">Musica</h5>
-                            <p class="card-text"> Eventi musicali</p>
+                            <p class="card-text">Eventi musicali</p>
                             <a href="PAGES/Concerti.html" class="btn btn-primary">Concerti</a>
                         </div>
                     </div>
                 </div>
-
+    
                 <div class="swiper-slide">
                     <div class="card">
                         <img id="imgTeatro" src="img/concerto.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Spettacolo</h5>
-                            <p class="card-text"> Eventi teatrali</p>
+                            <p class="card-text">Eventi teatrali</p>
                             <a href="PAGES/Teatro.html" class="btn btn-primary">Teatro</a>
                         </div>
                     </div>
@@ -106,33 +104,23 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
+    
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-            <div class="swiper-scrollbar"></div>
         </div>
-
-
+    
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
         <script>
             const swiper = new Swiper('.swiper', {
-                // Optional parameters
                 direction: 'horizontal',
                 loop: true,
-
                 slidesPerView: 1,
-
                 breakpoints: {
-                    // 640: {
-                    //   slidesPerView: 2,
-                    //   spaceBetween: 20,
-                    // },
                     768: {
                         slidesPerView: 1,
                         spaceBetween: 10,
@@ -146,24 +134,19 @@
                         spaceBetween: 10,
                     },
                 },
-                // If we need pagination
                 pagination: {
                     el: '.swiper-pagination',
+                    clickable: true, // Aggiunto per rendere i pallini cliccabili
                 },
-
-                // Navigation arrows
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
                 },
-
-                // And if we need scrollbar
-                scrollbar: {
-                    el: '.swiper-scrollbar',
-                },
             });
         </script>
-        <script src="JS/script.js"></script>
+    </div>
+    
+    <script src="JS/script.js"></script>
 </body>
 
 </html>
