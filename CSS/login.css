@@ -16,3 +16,9 @@
     flex-direction: column;
     align-items: center;
 }
+
+/* NAVBAR */
+
+.navbar-collapse{
+    flex-grow: 0 !important;
+}
