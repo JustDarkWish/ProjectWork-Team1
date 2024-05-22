@@ -1,6 +1,6 @@
 let cardBody= document.querySelector('#cardBody');
 let btn=document.querySelectorAll('#btnAltreInfo');
-// verificare il perchè button altre info non funziona e non reidirecta verso info
+
 
 let concertiArray=[];
 
@@ -31,14 +31,16 @@ function stampa(concertiArray) {
                                     <p id="brandSkincare" class="card-text">${concerto.brand}</p>
                                     <p id="descrizioneSkincare" class="card-text">${concerto.description}</p>
                                     <p id="prezzoSkincare" class="card-text">${concerto.price}€</p>
-                                    <button id="btnAltreInfo" type="button" href="evento.html" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#prodotto1Modal"> Altre info </button>
+                                    <a href="evento.html"> Altre info </a>
+                                    
                                     </div>
                                 </div>
     </div>`;
     cardBody.innerHTML+=card
 });
 }
-// btn.addEventListener('click',info);
-// }
-// function info() {
-//     window.location.href='../PAGES/evento.html';
+btn.addEventListener('click',info);
+
+function info() {
+    window.location.href='../PAGES/evento.html';
+}

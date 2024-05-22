@@ -2,17 +2,14 @@
 
 let img = document.querySelector('#img');
 let description = document.querySelector('#descrizioneEvento');
-let btnAggiungi = document.querySelector('#btnCarello'); /**btn aggiungi non cvollegato a nulla rimediare */
-let btnBack = document.querySelector('#btnBack');
-
+let btnAggiungi = document.querySelector('#btnCarello'); 
 
 const parametriURL = window.location.search;
 const parametriParsURL = new URLSearchParams(parametriURL);
 
 let prodottoId = parametriParsURL.get('id');
 let arrayCarrello = [];
-
-const URLRICERCA = /*qui inserisci l'endpoint java*/ `${prodottoId}`;
+const URLRICERCA = `https://dummyjson.com/products/${prodottoId}`;
 
 fetch(URLRICERCA)
     .then(response => {
@@ -49,8 +46,4 @@ function aggiungi() {
         console.log(arrayCarrello);
         localStorage.setItem("carrello",JSON.stringify(arrayCarrello));
     })
-}
-btnBack.addEventListener('click',goBack)
-function goBack() {
-    window.history.back();
 }
