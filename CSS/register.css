@@ -1,5 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.containerLoginRegister {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* NAVBAR */
 
 .navbar-collapse{
     flex-grow: 0 !important;
+}
+
+/* FIELD */
+
+.stiliFieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stiliLegend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
