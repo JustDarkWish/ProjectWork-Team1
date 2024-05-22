@@ -8,7 +8,7 @@ if (ruoloUtente==null) {
 }else if(ruoloUtente=='ROLE_USER'){
     loginUtente.innerHTML="Logout";
     loginUtente.addEventListener('click',logout);
-    text.innerHTML=`Benvenuto ad Eventia`;
+    text.innerHTML=`Benvenuto ad Eventia `;
     let carrello= document.createElement('button');
     carrello.innerHTML="vai al tuo carrello";
     text.appendChild(carrello);
