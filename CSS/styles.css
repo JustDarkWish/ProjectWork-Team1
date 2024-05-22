@@ -31,3 +31,6 @@ body {
     text-align: center;
     z-index: 10;
 }
+.navbar-collapse{
+    flex-grow: 0 !important;
+}
