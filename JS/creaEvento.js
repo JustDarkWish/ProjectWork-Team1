@@ -29,9 +29,10 @@ class Evento{
 }
 
 function creaEvento() {
-    let evento= new Evento(titolo,tipologia,caratteristiche,descrizione,luogoEvento,coordinate,disponibilità,posti,dataEvento,locandinaUrl,prezzoListino);
+    let evento= new Evento(titolo.value,tipologia.value,caratteristiche.value,descrizione.value,luogoEvento.value,coordinate.value,disponibilità.value,posti.value,dataEvento.value,locandinaUrl.value,prezzoListino.value);
 
-    localStorage.setItem('Evento',evento);
+    localStorage.setItem('Evento',JSON.stringify(evento));
+    console.log(evento);
     window.location.reload;
 
 }
