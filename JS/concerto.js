@@ -1,18 +1,14 @@
 let cardBody= document.querySelector('#cardBody');
 let btn=document.querySelectorAll('#btnAltreInfo');
 
-
 let concertiArray=[];
 
 function scegliConcerti() {
     let concerti='https://dummyjson.com/products/category/groceries'
+
     fetch(concerti)
     .then(response =>{
-        if (response != null) {
             return response.json();
-        }else{
-            console.log("error response riga 10");
-        }
     })
     .then(prodotto=>{
         concertiArray.push(prodotto.products);
@@ -31,16 +27,15 @@ function stampa(concertiArray) {
                                     <p id="brandSkincare" class="card-text">${concerto.brand}</p>
                                     <p id="descrizioneSkincare" class="card-text">${concerto.description}</p>
                                     <p id="prezzoSkincare" class="card-text">${concerto.price}€</p>
-                                    <a href="evento.html"> Altre info </a>
-                                    
+                                    <button href="evento.html"> Altre info </button>
                                     </div>
                                 </div>
     </div>`;
     cardBody.innerHTML+=card
 });
-}
 btn.addEventListener('click',info);
 
 function info() {
     window.location.href='../PAGES/evento.html';
+}
 }
