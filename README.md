@@ -7,3 +7,10 @@ Lista cambiamenti al commit FIX:
     - Fixato link "LOGIN" nella pagina teatro: era presente un bottone invece che un a href
     - Aggiunta la dark mode alla pagina index
     - Fixati altri link relativi mancanti
+
+Lista cambiamenti al commit FIX 1:
+    - Aggiunto footer in tutte le pagine
+    - Link inseriti correttamente
+    - Inserite immagini per i logo dei socials
+    - Aggiunto CSS Footer
+    - Linkato CSS Footer in tutte le pagine contenenti il footer

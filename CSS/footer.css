@@ -1,0 +1,25 @@
+.containerFooter {
+    padding: 32px;
+    background-color: rgb(37, 31, 31);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoFooter {
+    width: 125px;
+    height: 30px;
+    display: flex;
+}
+
+.containerInfo {
+    display: flex;
+}
+
+.linkStyling {
+    text-decoration: none;
+}
+
+.containerSocials {
+    display: flex;
+}
