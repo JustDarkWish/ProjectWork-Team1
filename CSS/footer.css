@@ -1,9 +1,10 @@
 .containerFooter {
     padding: 32px;
     background-color: rgb(37, 31, 31);
-    height: 100px;
+    /* height: 100px; */
     display: flex;
     justify-content: space-between;
+    position: fixed;
 }
 
 .logoFooter {
