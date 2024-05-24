@@ -4,7 +4,7 @@
     /* height: 100px; */
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    margin-top: 5%;
 }
 
 .logoFooter {
