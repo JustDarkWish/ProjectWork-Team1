@@ -50,13 +50,15 @@ body {
     height: 25%;
     position: relative;
     z-index: 1; /* Assicurati che il carosello abbia un z-index inferiore */
-    margin-bottom: 50px;
+    margin-bottom: 8rem;
 }
 
 /* SWIPER */
 .card-body {
     padding-bottom: 3rem !important;
+    border-radius: 0 !important;
 }
+
 
 .swiper-pagination {
     position: absolute;
