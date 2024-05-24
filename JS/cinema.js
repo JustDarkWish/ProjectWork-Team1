@@ -1,17 +1,14 @@
 let cardBody= document.querySelector('#cardBody');
-let btn=document.querySelector('#btnAltreInfo');
+let btn=document.querySelectorAll('#btnAltreInfo');
 
 let filmArray=[];
 
 function scegliConcerti() {
-    let film='https://dummyjson.com/products/category/skincare'
+    let film='https://dummyjson.com/products/category/groceries'
     fetch(film)
     .then(response =>{
-        if (response != null) {
-            return response.json();
-        }else{
-            console.log("error response riga 10");
-        }
+        return response.json();
+
     })
     .then(prodotto=>{
         filmArray.push(prodotto.products);
