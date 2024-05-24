@@ -1,9 +1,14 @@
 /* Layout Flexbox */
 html, body {
+    position: relative;
     height: 100%;
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .wrapper {
@@ -33,6 +38,19 @@ body {
     flex-basis: 0%;
     flex-grow: 0 !important;
     align-items: baseline;
+}
+
+.containerOne {
+    height: 55%;
+    position: relative;
+    z-index: 2; /* Assicurati che il containerOne abbia un z-index più alto */
+}
+
+.containerTwo {
+    height: 25%;
+    position: relative;
+    z-index: 1; /* Assicurati che il carosello abbia un z-index inferiore */
+    margin-bottom: 50px;
 }
 
 /* SWIPER */

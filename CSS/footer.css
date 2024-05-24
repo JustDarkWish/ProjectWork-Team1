@@ -3,10 +3,10 @@
     background-color: rgb(37, 31, 31);
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    position: relative;
     bottom: 0;
-    left: 0;
     width: 100%;
+    transform: translateZ(0);
 }
 
 .logoFooter {
