@@ -6,13 +6,13 @@ body {
 
 }
 
-.navbar-brand{
+.navbar-brand {
     font-size: 4rem !important;
     /* padding: 0 !important; */
     padding-bottom: 1rem !important;
 }
 
-.container-fluid{
+.container-fluid {
     display: flex;
     --bs-gutter-x: 4rem !important;
     --bs-gutter-y: 1rem !important;
@@ -25,24 +25,35 @@ body {
 }
 
 
-/* SWIPER  */
+
+
+/* SWIPER */
+
+.card-body {
+    padding-bottom: 3rem !important;
+}
 
 .swiper-pagination {
     position: absolute;
-    bottom: -4px !important; /* Modifica questo valore per spostare i pallini più in basso o più in alto */
+    bottom: 0 !important; /* Modifica questo valore per spostare i pallini più in basso o più in alto */
     left: 0;
     width: 100%;
     text-align: center;
     z-index: 10;
+    padding-bottom: 0.5rem !important;
 }
 
-.navbar-collapse{
+.navbar-collapse {
     flex-grow: 0 !important;
 }
 
+.card img {
+    width: 100%;
+    height: 200px;
+}
 /* Stili personalizzati per il video di sfondo */
 
-.background{
+.background {
     background-size: cover;
     background-image: url('/ProjectWork-Team1/img/video_hero.mp4');
     width: 100%;
@@ -50,7 +61,7 @@ body {
     position: relative;
 }
 
-.container_video{
+.container_video {
     margin: 0;
     width: 100%;
 }
