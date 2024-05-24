@@ -66,27 +66,30 @@
 
     </nav>
     
-    <!-- HERO -->
+    <!-- HEADER -->
+    <div class="containerOne">
 
-    <label class="content">EVENTIA: <br> DIVERTIMENTO A 360°</label>
+        <label class="content">EVENTIA: <br> DIVERTIMENTO A 360°</label>
 
-    <div class="container_video">
-        <video src="img/video_hero.mp4" autoplay loop muted class="background-clip"></video>
-    </div>
+        <div class="container_video">
+            <video src="img/video_hero.mp4" autoplay loop muted class="background-clip"></video>
+        </div>
 
-    <section id="hero" class="position-relative container-fluid">
+        <section id="hero" class="position-relative container-fluid">
 
-        <!-- <div class="title">
+            <!-- <div class="title">
 
-             <h2 id="text">Eventia è un progetto sviluppato da una giovane banda di programmatori che permette a chiunque
-                di poter creare e iscriversi ad eventi in giro per l'Italia, dagli spettacoli teatrali e di cabaret ai
-                film da premio oscar fino ad arrivare ai più grandi concerti...
-                vivi alla eventia vivi al italiana perchè la cultura è roba nostra.
-            </h2>
+                <h2 id="text">Eventia è un progetto sviluppato da una giovane banda di programmatori che permette a chiunque
+                    di poter creare e iscriversi ad eventi in giro per l'Italia, dagli spettacoli teatrali e di cabaret ai
+                    film da premio oscar fino ad arrivare ai più grandi concerti...
+                    vivi alla eventia vivi al italiana perchè la cultura è roba nostra.
+                </h2>
   
-        </div> -->
-        
-    </section>
+            </div> -->
+
+        </section>
+
+    </div>
 
     <!-- CAROSELLO -->
 
@@ -177,43 +180,6 @@
             <div class="swiper-button-next"></div>
 
         </div>
-    
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-            </script>
-
-        <script>
-
-            const swiper = new Swiper('.swiper', {
-                direction: 'horizontal',
-                loop: true,
-                slidesPerView: 1,
-                breakpoints: {
-                    768: {
-                        slidesPerView: 1,
-                        spaceBetween: 10,
-                    },
-                    992: {
-                        slidesPerView: 2,
-                        spaceBetween: 10,
-                    },
-                    1200: {
-                        slidesPerView: 3,
-                        spaceBetween: 10,
-                    },
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true, // Aggiunto per rendere i pallini cliccabili
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-
-        </script>
 
     </div>
 
@@ -258,6 +224,43 @@
     
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 1,
+            breakpoints: {
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true, // Aggiunto per rendere i pallini cliccabili
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+    
     <script src="JS/script.js"></script>
 
 </body>
