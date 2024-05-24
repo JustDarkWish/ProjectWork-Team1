@@ -1,16 +1,25 @@
-
-body {
-    background-color: #302d2d!important;
-    color: white !important;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
-
+/* Layout Flexbox */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
+.wrapper {
+    flex: 1;
+}
 
+/* Altri stili*/
+body {
+    background-color: #302d2d !important;
+    color: white !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
 
+/* Altri stili */
 .navbar-brand {
     font-size: 4rem !important;
-    /* padding: 0 !important; */
     padding-bottom: 1rem !important;
 }
 
@@ -26,18 +35,14 @@ body {
     align-items: baseline;
 }
 
-
-
-
 /* SWIPER */
-
 .card-body {
     padding-bottom: 3rem !important;
 }
 
 .swiper-pagination {
     position: absolute;
-    bottom: 0 !important; /* Modifica questo valore per spostare i pallini più in basso o più in alto */
+    bottom: 0 !important;
     left: 0;
     width: 100%;
     text-align: center;
@@ -53,8 +58,8 @@ body {
     width: 100%;
     height: 200px;
 }
-/* Stili personalizzati per il video di sfondo */
 
+/* Stili personalizzati per il video di sfondo */
 .background {
     background-size: cover;
     background-image: url('/ProjectWork-Team1/img/video_hero.mp4');
@@ -68,7 +73,7 @@ body {
     width: 100%;
 }
 
-.background-clip{
+.background-clip {
     width: 100%;
 }
 
@@ -86,17 +91,12 @@ body {
     position: absolute;
     z-index: 1;
     color: white;
-    /* transform: translate(10rem, 23rem); */
-    /* margin-top: 15rem; 
-    margin-left: 5rem; */
     font-size: 90px;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    animation: fadeInLeft 2s, transformAnimation 2s ;
-                    
-}   
-
+    animation: fadeInLeft 2s, transformAnimation 2s;
+}
 
 .overlay {
     position: absolute;
@@ -104,88 +104,79 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Optional: Overlay semi-trasparente */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 0;
 }
 
-
-
-/* MEDIA QUERY  */
-
+/* MEDIA QUERY */
 @media only screen and (max-width: 2500px) {
     .content {
-        margin-top: 18rem; 
+        margin-top: 18rem;
         margin-left: 8rem;
         font-size: 130px;
     }
-    }
+}
 
 @media only screen and (max-width: 1900px) {
     .content {
-        margin-top: 15rem; 
+        margin-top: 15rem;
         margin-left: 8rem;
         font-size: 100px;
     }
-    }
+}
 
 @media only screen and (max-width: 1500px) {
     .content {
-        margin-top: 12rem; 
+        margin-top: 12rem;
         margin-left: 8rem;
         font-size: 90px;
     }
-    }
-
+}
 
 @media only screen and (max-width: 1240px) {
     .content {
-        margin-top: 9rem; 
+        margin-top: 9rem;
         margin-left: 4rem;
         font-size: 60px;
     }
-    }
-
+}
 
 @media only screen and (max-width: 920px) {
     .content {
-        margin-top: 8rem; 
+        margin-top: 8rem;
         margin-left: 3rem;
         font-size: 45px;
     }
-    }
-
+}
 
 @media only screen and (max-width: 800px) {
     .content {
-        margin-top: 7rem; 
+        margin-top: 7rem;
         margin-left: 3rem;
         font-size: 40px;
     }
-    }
-
+}
 
 @media only screen and (max-width: 680px) {
     .content {
-        margin-top: 6rem; 
+        margin-top: 6rem;
         margin-left: 2rem;
         font-size: 35px;
     }
-    }
-
+}
 
 @media only screen and (max-width: 500px) {
     .content {
-        margin-top: 4rem; 
+        margin-top: 4rem;
         margin-left: 1.5rem;
         font-size: 30px;
     }
-    }
-
+}
 
 @media only screen and (max-width: 390px) {
     .content {
-        margin-top: 3rem; 
+        margin-top: 3rem;
         margin-left: 1.5rem;
         font-size: 25px;
     }
-    }
+}
