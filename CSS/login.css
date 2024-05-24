@@ -10,9 +10,9 @@ h1 {
     font-family: "Bebas Neue", sans-serif;
 }
 
-.btn {
+.btnLogin {
     border: 1px solid rgba(228, 228, 228, 0.445);
-    /* background-color: rgba(228, 228, 228, 0.151); */
+    background-color: rgba(228, 228, 228, 0.151);
     margin-top: 1rem;
     margin-bottom: 7rem;
     padding: 4px 12px;
