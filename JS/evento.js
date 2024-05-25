@@ -24,7 +24,8 @@ fetch(URLRICERCA)
     })
 
 function stampa(prodotto) {
-    img.setAttribute('src', prodotto.locandina_URL);
+
+    img.setAttribute('src', prodotto.images);
     description.innerHTML = `<div id="info" class="h-100">
     <p> ${prodotto.title} </p>
     <p> Categoria: ${prodotto.category} </p> 
