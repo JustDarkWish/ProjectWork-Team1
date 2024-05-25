@@ -50,7 +50,38 @@
             </div>
         </div>
     </nav>
-   
+
+    <!-- MAIN -->
+    <div class="container text-center position-relative container-fluid">
+        <div class="row">
+            <div id="containerProdotti" class="col-lg-8">
+                <div id="conteinerProdotto" class="row align-items-center">
+                    <div id="inputContainer">
+                        <div>
+                            <h3>Il tuo carrello</h3>
+                            <ul id="listaProdotti">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div id="containerTotale" class="col-lg-4">
+                <h3>Riepigolo Ordine:</h3>
+                <h4>Spedizione</h4>
+                <select id="spedizione">
+                    <option>Spedizione gratis</option>
+                    <option>Spedizione standard 5€</option>
+                    <option>Spedizione veloce 10 €</option>
+                </select>
+                <h4>Codice Sconto</h4>
+                <input id="sconto" type="text" />
+                <h4>Totale:</h4>
+                <p id="calcoloTotale"></p>
+                <button id="btnCheckout" type="button">Procedi all'acquisto</button>
+            </div>
+        </div>
+    </div>
     <!-- FOOTER -->
 
     <footer class="containerFooter">

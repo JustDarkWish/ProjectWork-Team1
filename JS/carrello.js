@@ -3,7 +3,8 @@ let listaProdotti = document.querySelector('#listaProdotti');
 let checkboxDelete = document.querySelector('#checkboxDelete');
 let calcoloTotale = document.querySelector('#calcoloTotale');
 
-let carrello = JSON.parse(localStorage.getItem('arrayCarrello'));
+
+let carrello = JSON.parse(localStorage.getItem('carrello'));
 
 
 popolaCarrello();
