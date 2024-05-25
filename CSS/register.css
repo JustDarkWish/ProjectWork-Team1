@@ -8,12 +8,6 @@
 }
 
 .background-register-clip {
-    /* width: 100%;
-    height: auto;
-    position: absolute;
-    z-index: -1;
-    object-fit: cover;
-    overflow: hidden; */
     position: absolute;
     top: 0;
     left: 0;
@@ -78,13 +72,15 @@
 
 #ruolo {
     background-color: #3B3B3B;
+    width: 190.23px;
+    height: 28.48px;
 }
 
 .btnRegistrati {
     border: 1px solid rgba(228, 228, 228, 0.445);
-    background-color: rgba(228, 228, 228, 0.151);
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+    background-color: rgba(228, 228, 228, 0.39);
+    margin-top: 1rem;
+    margin-bottom: 4rem;
     padding: 4px 12px;
     border-radius: 0.2rem;
 }
@@ -95,7 +91,7 @@
 
 #registerForm {
     /* border: 1px solid rgba(255, 255, 255, 0.219); */
-    background-color: rgba(255, 255, 255, 0.123);
+    background-color:rgba(138, 136, 136, 0.205);
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: 500px;
