@@ -1,7 +1,7 @@
 let cardBody= document.querySelector('#cardBody');
 let filmArray=[];
-
-function scegliConcerti() {
+// cambiare le fetch con quelle di hernan 
+function scegliFilm() {
     let film='https://dummyjson.com/products/category/groceries'
     fetch(film)
     .then(response =>{
@@ -14,7 +14,8 @@ function scegliConcerti() {
         console.log(filmArray);
     })
 }
-scegliConcerti();
+scegliFilm();
+// cambiare i .title ecc con quelle di hernan
 function stampa(filmArray) {
     filmArray.forEach(film => {
         let card= `<div class="swiper-slide">
@@ -25,22 +26,23 @@ function stampa(filmArray) {
         <p id="brandSkincare" class="card-text">${film.brand}</p>
         <p id="descrizioneSkincare" class="card-text">${film.description}</p>
         <p id="prezzoSkincare" class="card-text">${film.price}€</p>
-        <button id="btnAltreInfo" type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#prodotto1Modal"> Altre info </button>
+        <button class="btnAltreInfo" id="${film.id}" type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#prodotto1Modal"> Altre info </button>
         </div>
         </div>
         </div>`;
         cardBody.innerHTML+=card;
         return film;
     });
-    document.querySelectorAll('#btnAltreInfo').forEach(btn => {
+    document.querySelectorAll('.btnAltreInfo').forEach(btn => {
         btn.addEventListener('click', altreInfo);
     });
 
 
 }
-function altreInfo() {
-    let prodottoId = event.target.getAttribute(film.id);
+function altreInfo(event) {
+    let prodottoId = event.target.getAttribute('id');
     localStorage.setItem('id', prodottoId);
     console.log(prodottoId);
+    window.location.href="/PAGES/evento.html"
 }
 

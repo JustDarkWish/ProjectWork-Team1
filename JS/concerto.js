@@ -1,10 +1,8 @@
 let cardBody= document.querySelector('#cardBody');
-let btn=document.querySelectorAll('#btnAltreInfo');
-
 let concertiArray=[];
-
+// cambiare le fetch con quelle di hernan 
 function scegliConcerti() {
-    let concerti='https://dummyjson.com/products/category/groceries'
+    let concerti='https://dummyjson.com/products/category/smartphones'
 
     fetch(concerti)
     .then(response =>{
@@ -17,6 +15,7 @@ function scegliConcerti() {
     })
 }
 scegliConcerti();
+// cambiare i .title ecc con quelle di hernan
 function stampa(concertiArray) {
     concertiArray.forEach(concerto => {
         let card= `<div class="swiper-slide">
@@ -27,15 +26,20 @@ function stampa(concertiArray) {
                                     <p id="brandSkincare" class="card-text">${concerto.brand}</p>
                                     <p id="descrizioneSkincare" class="card-text">${concerto.description}</p>
                                     <p id="prezzoSkincare" class="card-text">${concerto.price}€</p>
-                                    <button href="evento.html"> Altre info </button>
+                                    <button class="btnAltreInfo" id="${concerto.id}" type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#prodotto1Modal"> Altre info </button>
                                     </div>
                                 </div>
     </div>`;
     cardBody.innerHTML+=card
+    return concerto;
 });
-btn.addEventListener('click',info);
-
-function info() {
-    window.location.href='../PAGES/evento.html';
+document.querySelectorAll('.btnAltreInfo').forEach(btn => {
+    btn.addEventListener('click', altreInfo);
+});
+function altreInfo(event) {
+    let prodottoId = event.target.getAttribute('id');
+    localStorage.setItem('id', prodottoId);
+    console.log(prodottoId);
+    window.location.href="/PAGES/evento.html"
 }
 }
