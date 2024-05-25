@@ -1,4 +1,4 @@
-// le funzioni qui presenti non possono  funzionare essendo la fetch di riga 15 vuota (da errore)
+
 
 let img = document.querySelector('#img');
 let description = document.querySelector('#descrizioneEvento');
@@ -7,7 +7,7 @@ let prodottoId=localStorage.getItem('id')
 const parametriURL = window.location.search;
 const parametriParsURL = new URLSearchParams(parametriURL);
 
-// let prodottoId = parametriParsURL.get('id');
+
 let arrayCarrello = [];
 const URLRICERCA = `https://dummyjson.com/products/${prodottoId}`;
 
