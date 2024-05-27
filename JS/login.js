@@ -6,7 +6,21 @@ const form = document.getElementById('loginForm');
 let registeredUsername = localStorage.getItem('email');
 let registeredPassword = localStorage.getItem('password');
 
-function login(event) {
+let utenti='https://dummyjson.com/products/category/groceries'
+fetch(utenti)
+.then(utenti=>{
+    login();
+    forEach(utente => {
+        if(utenti.email==email){
+
+        }
+    });
+})
+
+
+
+
+function login() {
     event.preventDefault();
 
     if (registeredUsername === email.value) {
