@@ -65,38 +65,36 @@
     <div class="container">
 
         
-        <form id="registerForm">
+        <div class="row justify-content-center">
+            <form id="registerForm" class="registerForm col-md-10 col-lg-8">
             
-            <h1 class="h1">Registrati</h1>
-
-            <div class="form">
-                <label for="name">Nome</label>
-                <input type="text" id="name" name="name" required>
-                <label for="surname">Cognome</label>
-                <input type="text" id="surname" name="surname" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-                <label for="password">Ripeti Password</label>
-                <input type="password" id="passwordDue" name="passwordDue" required>
-            </div>
-
-            <fieldset class="stiliFieldset">
-                <legend class="stiliLegend">Ruolo</legend>
-                <select name="ruolo" id="ruolo">
-                    <option value="ROLE_USER" selected="selected">User</option>
-                    <option value="ROLE_ADMIN">Admin</option>
-                </select>
-            </fieldset>
-
-            <div class="containerLoginRegister">
-                <button type="submit" class="btnRegistrati">Registrati</button>
-                <p class="paragraph">Hai già un account?</p>
-                <a href="../PAGES/login.html" class="accedi-a">Accedi!</a>
-            </div>
-
-        </form>
+                <h1 class="h1">Registrati</h1>
+                <div class="form">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="surname">Cognome</label>
+                    <input type="text" id="surname" name="surname" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <label for="password">Ripeti Password</label>
+                    <input type="password" id="passwordDue" name="passwordDue" required>
+                </div>
+                <fieldset class="stiliFieldset">
+                    <legend class="stiliLegend">Ruolo</legend>
+                    <select name="ruolo" id="ruolo">
+                        <option value="ROLE_USER" selected="selected">User</option>
+                        <option value="ROLE_ADMIN">Admin</option>
+                    </select>
+                </fieldset>
+                <div class="containerLoginRegister">
+                    <button type="submit" class="btnRegistrati">Registrati</button>
+                    <p class="paragraph">Hai già un account?</p>
+                    <a href="../PAGES/login.html" class="accedi-a">Accedi!</a>
+                </div>
+            </form>
+        </div>
 
     </div>
 

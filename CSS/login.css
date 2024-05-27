@@ -1,21 +1,27 @@
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     min-height: calc(100vh - 126px);
-
 }
 
 .contenitore-login {
-    background-color: rgba(138, 136, 136, 0.205);
+    background-color: rgba(138, 136, 136, 0.308);
+    backdrop-filter: blur(10px);
     margin-top: 1rem;
     margin-bottom: 1rem;
-    width: 500px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;  
+    border-radius: 0.4rem;    
 }
+
+input {
+    border-radius: 0.2rem;
+    background-color: #3B3B3B;
+    border: 0.9px solid #858585;
+}
+
 
 h1 {
     font-family: "Bebas Neue", sans-serif;
@@ -32,8 +38,6 @@ h1 {
     margin-bottom: 7rem;
     padding: 4px 12px;
     border-radius: 0.2rem;
-    
-    
 }
 
 p {

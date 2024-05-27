@@ -231,6 +231,29 @@ body {
     z-index: 1;
 }
 
+#bottoneInfo {
+    background-color: #1D1D1D;
+    color: white;
+    border: 1px solid #a5a5a58f;
+}
+
+.swiper-button-next {
+    color: white !important;
+}
+
+.swiper-button-prev {
+    padding-top: 6rem;
+    color: white !important;
+}
+
+.card {
+    border: 1px solid #a5a5a58f !important;
+}
+
+.card-body {
+    background-color: #1D1D1D;
+    /* border: 1px solid white; */
+}
 
 
 /* MISSION */
