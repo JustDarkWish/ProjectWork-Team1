@@ -1,11 +1,16 @@
-let ruoloUtente = localStorage.getItem('ruolo');
+let ruoloUtente = localStorage.getItem('UtenteRuolo');
 let loginUtente= document.getElementById('login');
 let text= document.getElementById('text');
 loginUtente.innerHTML=ruoloUtente;
-if (ruoloUtente==null) {
-    loginUtente.innerHTML="Login";
-    loginUtente.addEventListener('click',login)
-}else if(ruoloUtente=='ROLE_USER'){
+if (ruoloUtente=="RUOLO_ADMIN") {
+    loginUtente.innerHTML="Logout";
+    loginUtente.addEventListener('click',logout);
+    text.innerHTML=`Sezione Admin per creare e aggiungere eventi`;
+    let redirect = document.createElement('button');
+    redirect.innerHTML="vai alla sezione pannello";
+    text.appendChild(redirect);
+    redirect.addEventListener('click',redirectPannello);
+}else if(ruoloUtente=='RUOLO_UTENTE'){
     loginUtente.innerHTML="Logout";
     loginUtente.addEventListener('click',logout);
     text.innerHTML=`Benvenuto ad Eventia `;
@@ -14,13 +19,8 @@ if (ruoloUtente==null) {
     text.appendChild(carrello);
     carrello.addEventListener('click',vaiCarrello);
 }else{
-    loginUtente.innerHTML="Logout";
-    loginUtente.addEventListener('click',logout);
-    text.innerHTML=`Sezione Admin per creare e aggiungere eventi`;
-    let redirect = document.createElement('button');
-    redirect.innerHTML="vai alla sezione pannello";
-    text.appendChild(redirect);
-    redirect.addEventListener('click',redirectPannello);
+    loginUtente.innerHTML="Login";
+    loginUtente.addEventListener('click',login)
 }
 function redirectPannello() {
     window.location.href="PAGES/pannello.html";
