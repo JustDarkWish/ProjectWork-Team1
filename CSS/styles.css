@@ -15,11 +15,28 @@ body {
     flex: 1;
 }
 
+.dropdown {
+    padding-left: 2rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#login {
+    padding-left: 2rem;
+    font-size: 20px;
+}
+
+#home {
+    padding-left: 2rem;
+    font-size: 20px;
+}
+
 /* Altri stili*/
 body {
     background-color: #2b3035 !important;
     color: white !important;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    font-family: "Lora" !important;
 }
 
 /* Altri stili */
@@ -27,6 +44,8 @@ body {
     font-size: 4rem !important;
     padding-bottom: 1rem !important;
 }
+
+
 
 .container-fluid {
     display: flex;
@@ -41,22 +60,21 @@ body {
 }
 
 .containerOne {
-    height: 55%;
     position: relative;
-    z-index: 2; /* Assicurati che il containerOne abbia un z-index più alto */
+    height: 100vh; /* Altezza pari all'altezza del viewport */
 }
 
 .containerTwo {
-    height: 25%;
     position: relative;
-    z-index: 1; /* Assicurati che il carosello abbia un z-index inferiore */
-    margin-bottom: 8rem;
+    z-index: 2; /* Assicura che lo swiper sia sopra il video */
+    margin-top: -15vh; /* Solleva lo swiper sopra il video */
 }
 
 /* SWIPER */
 .card-body {
     padding-bottom: 3rem !important;
     border-radius: 0 !important;
+    background-color: #1D1D1D
 }
 
 
@@ -116,7 +134,11 @@ body {
     font-weight: 400;
     font-style: normal;
     animation: fadeInLeft 2s, transformAnimation 2s;
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
+
 
 .overlay {
     position: absolute;
@@ -199,4 +221,90 @@ body {
         margin-left: 1.5rem;
         font-size: 25px;
     }
+} 
+
+
+/* SWIPER */
+#container-swiper {
+    position: relative;
+    transform: translateY(-100px);
+    z-index: 1;
 }
+
+
+
+/* MISSION */
+
+.title {
+    background-color: #a5a5a58f;
+    /* background-color: #1D1D1D; */
+    padding: 4rem;
+    display: flex;
+
+}
+
+#hero {
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    
+}
+
+.titolo-p {
+    font-size: 100px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.puttana-p {
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+}
+
+.contenitore-titolo {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+
+.testo-p {
+    margin-left: 10rem;
+    margin-bottom: 0;
+    text-align: end;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+@media only screen and (max-width: 768px){
+    .brAnnullato {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .contenitore-titolo {
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .title {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .testo-p {
+        margin-left: 0;
+        text-align: center;
+        
+    }
+}
+
+
