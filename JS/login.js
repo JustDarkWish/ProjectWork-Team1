@@ -8,7 +8,7 @@ let registeredPassword = localStorage.getItem("password");
 
 
 async function login() {
-  /* this.preventDefault(); */
+
 
   const getLoginURL = "http://localhost:8080/api/login";
 
@@ -28,29 +28,13 @@ async function login() {
   
   if (utente.email == "" && utente.password == "") {
       console.log("login fallito");
+      alert("Utente non trovato");
     } else {
-        console.log("login ok");
+    console.log("login ok");
     localStorage.setItem("Utente", JSON.stringify(utente));
     localStorage.setItem("UtenteRuolo", utente.ruolo);
+    window.location.href="/index.html";
   }
 }
 btn.addEventListener("click", login);
 
-/* function login(event) {
-    event.preventDefault();
-
-    if (adasdasdasdsdasdas === email.value) {
-        
-        if(registeredPassword === password.value) {
-
-            window.location.href = '../index.html';
-
-        }
-         else {
-            alert("Password errata, controlla che la password sia corretta e riprova.")
-         }
-    } else {
-        alert('Non risulta nessun utente registrato con questi dati.');
-    }
-}
- */

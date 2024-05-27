@@ -9,7 +9,7 @@ const parametriParsURL = new URLSearchParams(parametriURL);
 
 
 let arrayCarrello = [];
-const URLRICERCA = `https://dummyjson.com/products/${prodottoId}`;
+const URLRICERCA = `http://localhost:8080/api/evento/${prodottoId}`;
 
 fetch(URLRICERCA)
     .then(response => {
@@ -25,15 +25,13 @@ fetch(URLRICERCA)
 
 function stampa(prodotto) {
 
-    img.setAttribute('src', prodotto.images);
+    img.setAttribute('src', prodotto.locandinaURL);
     description.innerHTML = `<div id="info" class="h-100">
-    <p> ${prodotto.title} </p>
-    <p> Categoria: ${prodotto.category} </p> 
-    <p> Brand: ${prodotto.brand} </p> 
-    <p> ${prodotto.description} </p> 
-    <p> Prezzo: ${prodotto.price}€</p> 
-    <p> Rating: ${prodotto.rating} </p> 
-    <p> Stock: ${prodotto.stock} </p> 
+    <p> ${prodotto.titolo} </p>
+    <p> Numero di posti: ${prodotto.posti} </p> 
+    <p> Luogo evento: ${prodotto.luogoEvento} </p> 
+    <p> ${prodotto.descrizione} </p> 
+    <p> Prezzo: ${prodotto.prezzoListino}€</p> 
     </div>`;
 }
 
