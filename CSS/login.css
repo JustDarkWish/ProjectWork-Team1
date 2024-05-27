@@ -3,20 +3,37 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3rem;
+    min-height: calc(100vh - 126px);
+
+}
+
+.contenitore-login {
+    background-color: rgba(138, 136, 136, 0.205);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
     font-family: "Bebas Neue", sans-serif;
+    font-size: calc(1.375rem + 1.5vw);
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
 }
 
 .btnLogin {
-    border: 1px solid rgba(228, 228, 228, 0.445);
-    background-color: rgba(228, 228, 228, 0.151);
+    border: 1px solid rgba(255, 255, 255, 0.445);
+    background-color: rgba(163, 163, 163, 0.39);
     margin-top: 1rem;
     margin-bottom: 7rem;
     padding: 4px 12px;
     border-radius: 0.2rem;
+    
+    
 }
 
 p {
@@ -27,6 +44,10 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .containerLoginRegister {
@@ -39,4 +60,28 @@ p {
 
 .navbar-collapse{
     flex-grow: 0 !important;
+}
+
+.contenitore-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.containerFooter {
+    position: absolute;
+    bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.registrati-a {
+    padding-bottom: 3rem;
 }
