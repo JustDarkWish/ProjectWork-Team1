@@ -11,6 +11,10 @@ let locandinaUrl= document.getElementById('locandina');
 let prezzoListino= document.getElementById('prezzo');
 let btnCrea=document.getElementById('btnCrea');
 
+let utente=localStorage.getItem('UtenteId')
+
+const url = `localhost:8080/api/evento/utente/${utente}`;
+
 class Evento{
     constructor(titolo,tipologia,caratteristiche,descrizione,luogoEvento,coordinate,disponibilità,posti,dataEvento,locandinaUrl,prezzoListino){
         
@@ -31,10 +35,15 @@ class Evento{
 function creaEvento() {
     let evento= new Evento(titolo.value,tipologia.value,caratteristiche.value,descrizione.value,luogoEvento.value,coordinate.value,disponibilità.value,posti.value,dataEvento.value,locandinaUrl.value,prezzoListino.value);
 
-    localStorage.setItem('Evento',JSON.stringify(evento));
-    console.log(evento);
-    window.location.reload;
-
+    fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        
+        },
+        body: JSON.stringify(evento),
+},
+window.location.reload()
+);
 }
-
 btnCrea.addEventListener('click',creaEvento)

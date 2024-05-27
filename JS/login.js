@@ -33,6 +33,7 @@ async function login() {
     console.log("login ok");
     localStorage.setItem("Utente", JSON.stringify(utente));
     localStorage.setItem("UtenteRuolo", utente.ruolo);
+    localStorage.setItem("UtenteId", utente.utenteId);
     window.location.href="/index.html";
   }
 }
