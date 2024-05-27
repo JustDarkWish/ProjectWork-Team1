@@ -1,6 +1,5 @@
 let cardBody= document.querySelector('#cardBody');
 let filmArray=[];
-// cambiare le fetch con quelle di hernan 
 function scegliFilm() {
     let film='http://localhost:8080/api/evento'
     fetch(film)
