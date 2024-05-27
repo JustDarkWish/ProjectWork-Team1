@@ -5,7 +5,7 @@ let luogoEvento= document.getElementById('luogo');
 let disponibilità= document.getElementById('disponibilità');
 let posti= document.getElementById('posti');
 let dataEvento= document.getElementById('data');
-let locandinaUrl= document.getElementById('locandina');
+let locandinaURL= document.getElementById('locandina');
 let prezzoListino= document.getElementById('prezzo');
 let btnCrea=document.getElementById('btnCrea');
 
@@ -14,7 +14,7 @@ let utente=localStorage.getItem('UtenteId');
 const url = `http://localhost:8080/api/evento/utente/${utente}`;
 
 class Evento{
-    constructor(titolo,tipologia,descrizione,luogoEvento,disponibilità,posti,dataEvento,locandinaUrl,prezzoListino){
+    constructor(titolo,tipologia,descrizione,luogoEvento,disponibilità,posti,dataEvento,locandinaURL,prezzoListino){
         this.titolo=titolo;
         this.tipologia=tipologia;
         this.descrizione=descrizione;
@@ -22,14 +22,14 @@ class Evento{
         this.disponibilità=disponibilità;
         this.posti=posti;
         this.dataEvento=dataEvento;
-        this.locandinaUrl=locandinaUrl;
+        this.locandinaURL=locandinaURL;
         this.prezzoListino=prezzoListino;
     }
 }
 
 function creaEvento() {
-    let evento= new Evento(titolo.value,tipologia.value,descrizione.value,luogoEvento.value,disponibilità.value,posti.value,dataEvento.value,locandinaUrl.value,prezzoListino.value);
-
+    let evento= new Evento(titolo.value,tipologia.value,descrizione.value,luogoEvento.value,disponibilità.value,posti.value,dataEvento.value,locandinaURL.value,prezzoListino.value);
+    // console.log(JSON.stringify(evento));
     fetch(url, {
         method: 'POST',
         headers: {
@@ -38,7 +38,7 @@ function creaEvento() {
         },
         body: JSON.stringify(evento),
 },
-// window.location.reload()
+window.location.reload()
 );
 }
 btnCrea.addEventListener('click',creaEvento);

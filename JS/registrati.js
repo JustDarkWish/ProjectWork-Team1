@@ -3,13 +3,14 @@ let surname = document.querySelector('#surname');
 let email = document.querySelector('#email');
 let password = document.querySelector('#password');
 let passwordDue = document.querySelector('#passwordDue');
-let dataEvento= document.getElementById('data');
+let dataNascita= document.getElementById('data');
 let ruolo = document.querySelector('#ruolo');
 let btn = document.querySelector('.btn');
 let btnLogout = document.querySelector('.btnLogout');
 const form = document.getElementById('registerForm');
 
 const controlloPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&]{8,}$/i;
+const url="http://localhost:8080/api/utente"
 
 class Utente{
     constructor(nome,cognome,dataNascita,email,password,ruolo){
@@ -27,7 +28,8 @@ function creaUtente(event) {
     if (nameUtente.value !== '' && surname.value !== ''&& email.value !== '') {
         if(password.value === passwordDue.value) {
             if (controlloPass()) {
-                let utente= new Utente(nameUtente.value,surname.value,email.value,password.value,ruolo.value)
+                let utente= new Utente(nameUtente.value,surname.value,dataNascita.value,email.value,password.value,ruolo.value)
+                console.log(JSON.stringify(utente));
                 window.location.href ='../index.html';
                 fetch(url, {
                     method: 'POST',
@@ -64,4 +66,4 @@ function controlloPass() {
     }
 }
 
-form.addEventListener('submit', login);
+form.addEventListener('submit', creaUtente);
