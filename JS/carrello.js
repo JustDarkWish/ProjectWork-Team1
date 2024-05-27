@@ -5,13 +5,14 @@ let calcoloTotale = document.querySelector('#calcoloTotale');
 
 
 let carrello = JSON.parse(localStorage.getItem('carrello'));
+console.log(carrello);
 
 
 popolaCarrello();
 
 function popolaCarrello(){
     carrello.forEach(elemento => {
-        listaProdotti.innerHTML += `<li class="d-flex justify-content-between align-items-start mb-3" carrello_id="${elemento.carrello_id}"> <span> <img src="${elemento.prodotto.thumbnail}" class="img-fluid" pe-0" style="width: 25%" id="imgCart"> ${elemento.prodotto.title} - ${elemento.prodotto.price}€ <button class="btn btn-lg btnElimina"> </button></span></li>
+        listaProdotti.innerHTML += `<li class="d-flex justify-content-between align-items-start mb-3" carrello_id="${elemento.carrello_id}"> <span> <img src="${elemento.thumbnail}" class="img-fluid" pe-0" style="width: 25%" id="imgCart"> ${elemento.title} - ${elemento.price}€ <button class="btn btn-lg btnElimina"> </button></span></li>
         `; 
     });
     
@@ -27,7 +28,7 @@ function popolaCarrello(){
 function calcolaTotale(totale = 0){
     
     carrello.forEach(elemento =>{
-        totale += elemento.prodotto.price;
+        totale += elemento.price;
         calcoloTotale.innerHTML = totale;
     })
 }
