@@ -3,26 +3,44 @@ let surname = document.querySelector('#surname');
 let email = document.querySelector('#email');
 let password = document.querySelector('#password');
 let passwordDue = document.querySelector('#passwordDue');
+let dataNascita= document.getElementById('data');
 let ruolo = document.querySelector('#ruolo');
 let btn = document.querySelector('.btn');
 let btnLogout = document.querySelector('.btnLogout');
 const form = document.getElementById('registerForm');
 
 const controlloPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&]{8,}$/i;
+const url="http://localhost:8080/api/utente"
 
-function login(event) {
+class Utente{
+    constructor(nome,cognome,dataNascita,email,password,ruolo){
+        this.nome=nome;
+        this.cognome=cognome;
+        this.dataNascita=dataNascita;
+        this.email=email;
+        this.password=password;
+        this.ruolo=ruolo;    
+    }
+}
+function creaUtente(event) {
     event.preventDefault();
 
     if (nameUtente.value !== '' && surname.value !== ''&& email.value !== '') {
         if(password.value === passwordDue.value) {
             if (controlloPass()) {
-                localStorage.setItem('nome', nameUtente.value);
-                localStorage.setItem('cognome', surname.value);
-                localStorage.setItem('email', email.value);
-                localStorage.setItem('password', password.value);
-                localStorage.setItem('ruolo',ruolo.value);
-                console.log(ruolo.value);
+                let utente= new Utente(nameUtente.value,surname.value,dataNascita.value,email.value,password.value,ruolo.value)
+                console.log(JSON.stringify(utente));
                 window.location.href ='../index.html';
+                fetch(url, {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                    
+                    },
+                    body: JSON.stringify(utente),
+            },
+            // window.location.reload()
+            );
             } 
         else {
             alert('I dati inseriti non sono corretti, riprova.');
@@ -48,4 +66,4 @@ function controlloPass() {
     }
 }
 
-form.addEventListener('submit', login);
+form.addEventListener('submit', creaUtente);
