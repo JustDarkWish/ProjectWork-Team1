@@ -20,6 +20,10 @@ body {
 
 /* NAVBAR */
 
+.navbar {
+    background: #1d1d1d !important;
+}
+
 #home {
     padding-left: 2rem;
     font-size: 20px;
@@ -190,6 +194,11 @@ body {
 
 .containerSocials {
     display: flex;
+}
+
+.fonteIcone {
+    text-decoration: none;
+    
 }
 
 /* LOGIN */
@@ -486,19 +495,18 @@ body {
 
 /* MISSION */
 
+#hero {
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
 .title {
     background-color: #a5a5a58f;
     /* background-color: #1D1D1D; */
     padding: 4rem;
     display: flex;
-
-}
-
-#hero {
-    padding-bottom: 5rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    
+    border-radius: 0.2rem;
 }
 
 .titolo-p {
