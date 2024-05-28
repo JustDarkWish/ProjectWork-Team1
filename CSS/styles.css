@@ -208,7 +208,7 @@ body {
 .contenitore-login {
     background-color: rgba(138, 136, 136, 0.308);
     backdrop-filter: blur(10px);
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
@@ -435,13 +435,22 @@ body {
         align-items: center;
     }
 
-    .title {
-        margin-top: 5rem;
+    .contenitore-login {
+        width: 60%;
     }
 
-
+    .videoLoginBg {
+        display: none;
+    }
     
 
+    #registerForm {
+        width: 60%;
+    }
+
+    .video-background {
+        display: none;
+    }
 }
 
 
