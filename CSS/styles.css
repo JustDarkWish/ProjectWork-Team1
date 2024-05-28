@@ -87,6 +87,7 @@ body {
 .card img {
     width: 100%;
     height: 200px;
+    border-radius: .5rem;
 }
 
 #bottoneInfo {
@@ -105,6 +106,7 @@ body {
 
 .card {
     border: 1px solid #a5a5a58f !important;
+    border-radius: .5rem;
 }
 
 .card-body {
