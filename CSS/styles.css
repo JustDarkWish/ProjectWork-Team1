@@ -63,12 +63,12 @@ body {
 }
 
 /* SWIPER */
+
 .card-body {
     padding-bottom: 3rem !important;
     border-radius: 0 !important;
     background-color: #1D1D1D
 }
-
 
 .swiper-pagination {
     position: absolute;
@@ -83,6 +83,29 @@ body {
 .card img {
     width: 100%;
     height: 200px;
+}
+
+#bottoneInfo {
+    background-color: #1D1D1D;
+    color: white;
+    border: 1px solid #a5a5a58f;
+}
+
+.swiper-button-next {
+    color: white !important;
+}
+
+.swiper-button-prev {
+    color: white !important;
+}
+
+.card {
+    border: 1px solid #a5a5a58f !important;
+}
+
+.card-body {
+    background-color: #1D1D1D;
+    /* border: 1px solid white; */
 }
 
 /* Stili personalizzati per il video di sfondo */
@@ -169,6 +192,168 @@ body {
     display: flex;
 }
 
+/* LOGIN */
+
+.contenitore-login {
+    background-color: rgba(138, 136, 136, 0.308);
+    backdrop-filter: blur(10px);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    border-radius: 0.4rem;    
+}
+
+.titoloLogin {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: calc(1.375rem + 1.5vw);
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.btnLogin {
+    border: 1px solid rgba(255, 255, 255, 0.445);
+    background-color: rgba(163, 163, 163, 0.39);
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+    padding: 4px 12px;
+    border-radius: 0.2rem;
+}
+
+.nonRegistered {
+    margin-bottom: 0;
+}
+
+.videoLoginBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.registrati-a {
+    padding-bottom: 3rem;
+}
+
+/* REGISTER */
+
+.container {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 126px);
+}
+
+.background-register-clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the whole area */
+}
+
+.titoloRegistrati {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: calc(1.375rem + 1.5vw);
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.inputRegister {
+    border-radius: 0.2rem;
+    background-color: #3B3B3B;
+    border: 0.9px solid #858585;
+}
+
+.containerLoginRegister {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FIELD */
+
+.stiliFieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stiliLegend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin: 0;
+    padding-top: 0.2rem;
+}
+
+#ruolo {
+    background-color: #3B3B3B;
+    width: 190.23px;
+    height: 28.48px;
+    border-radius: 0.2rem;
+}
+
+.btnRegistrati {
+    border: 1px solid rgba(228, 228, 228, 0.445);
+    background-color: rgba(228, 228, 228, 0.39);
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    padding: 4px 12px;
+    border-radius: 0.2rem;
+}
+
+.paragraph {
+    margin-bottom: 0.3rem;
+}
+
+.registerForm {
+    background-color: rgba(138, 136, 136, 0.308);
+    backdrop-filter: blur(10px);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 500px;
+    border-radius: 0.4rem;
+}
+
+.conntainerFooter {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+.accedi-a {
+    padding-bottom: 3rem;
+}
+
 /* MEDIA QUERY */
 
 @media only screen and (max-width: 2500px) {
@@ -176,68 +361,15 @@ body {
         margin-top: 5rem;
         margin-left: 50rem;
         font-size: 130px;
-
-
     }
 
 }
 
-@media only screen and (max-width: 2200px) {
-    .content {
-        margin-top: 5rem;
-        margin-left: 43rem;
-        font-size: 130px;
-
-
-    }
-
-}
-
-@media only screen and (max-width: 1900px) {
-    .content {
-        margin-top: 10rem;
-        margin-left: 36rem;
-        font-size: 100px;
-    }
-
-}
-
-@media only screen and (max-width: 1690px) {
-    .content {
-        margin-top: 12rem;
-        margin-left: 30rem;
-        font-size: 90px;
-    }
-}
-
-@media only screen and (max-width: 1390px) {
-    .content {
-        margin-top: 9rem;
-        margin-left: 25rem;
-        font-size: 60px;
-    }
-}
 @media only screen and (max-width: 1240px) {
     .content {
         margin-top: 9rem;
         margin-left: 22.5rem;
         font-size: 60px;
-    }
-}
-
-@media only screen and (max-width: 1090px) {
-    .content {
-        margin-top: 6rem;
-        margin-left: 20rem;
-        font-size: 45px;
-    }
-}
-
-@media only screen and (max-width: 868px) {
-    .content {
-        margin-top: 5rem;
-        margin-left: 15rem;
-        font-size: 50px;
     }
 }
 
@@ -249,14 +381,6 @@ body {
     }
 }
 
-@media only screen and (max-width: 668px) {
-    .content {
-        margin-top: 5rem;
-        margin-left: 10rem;
-        font-size: 35px;
-    }
-}
-
 @media only screen and (max-width: 480px) {
     .content {
         margin-top: 2rem;
@@ -264,43 +388,6 @@ body {
         font-size: 30px;
     }
 }
-
-
-
-
-
-
-/* SWIPER */
-/* #container-swiper {
-    position: relative;
-    transform: translateY(-100px);
-    z-index: 1;
-} */
-
-#bottoneInfo {
-    background-color: #1D1D1D;
-    color: white;
-    border: 1px solid #a5a5a58f;
-}
-
-.swiper-button-next {
-    color: white !important;
-}
-
-.swiper-button-prev {
-    color: white !important;
-}
-
-.card {
-    border: 1px solid #a5a5a58f !important;
-}
-
-.card-body {
-    background-color: #1D1D1D;
-    /* border: 1px solid white; */
-}
-
-
 
 @media only screen and (max-width: 2500px){
     #container-swiper {
@@ -390,8 +477,12 @@ body {
     }
 }
 
-
-
+#container-swiper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /* MISSION */
 
