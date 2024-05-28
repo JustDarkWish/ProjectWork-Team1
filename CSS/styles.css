@@ -524,6 +524,8 @@ body {
 /* MISSION */
 
 #hero {
+    margin-top: 7rem;
+    padding-top: 5rem;
     padding-bottom: 5rem;
     padding-left: 5rem;
     padding-right: 5rem;
@@ -594,4 +596,54 @@ body {
     }
 }
 
+@media only screen and (max-width: 480px){
+
+    /* Limita la larghezza e altezza delle card */
+.card {
+    max-width: 250px; /* Imposta la larghezza massima */
+    margin: 0 auto; /* Centra la card */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Per garantire che le immagini si adattino alle dimensioni delle card */
+.card img {
+    width: 100%;
+    height: auto; /* Mantiene il rapporto d'aspetto */
+    max-height: 100px; /* Imposta l'altezza massima, puoi modificarlo secondo le tue necessità */
+}
+
+/* Aggiorna anche i pulsanti e i body delle card se necessario */
+.card-body {
+    padding: 1rem !important; /* Riduce il padding */
+    background-color: #1D1D1D;
+}
+
+.swiper-button-next:after, .swiper-button-prev::after {
+    font-size: 30px;
+}
+
+    .title {
+        padding: 50px;
+    }
+
+    .puttana-p {
+        font-size: 25px;
+    }
+
+    .titolo-p {
+        font-size: 50px;
+        
+    }
+
+    .testo-p {
+        font-size: 15px;
+    }
+
+    
+}
 
