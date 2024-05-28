@@ -598,6 +598,11 @@ body {
 
 @media only screen and (max-width: 480px){
 
+#hero {
+    margin-top: 0.5rem;
+    padding-top: 0;
+}
+
     /* Limita la larghezza e altezza delle card */
 .card {
     max-width: 250px; /* Imposta la larghezza massima */
