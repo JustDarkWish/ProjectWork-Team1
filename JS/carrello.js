@@ -50,23 +50,13 @@ class Prenotazione {
 function aggiungi() {
     let prodottoId = event.target.getAttribute('id');
     let prezzoVendita = document.getElementById("prezzo-" + prodottoId);
-    let dataPrenotazione = document.getElementById("data-" + prodottoId);
+    let dataPrenotazione = (new Date()).toISOString()
     let quantitaPosti = 1;
 
-    const dateString = dataPrenotazione.innerHTML;
-    console.log(dateString);
-   
-    moment();
-    dataPrenotazione = moment(dateString, "YYYY-MM-DD").toDate();
-    // const year=
-    // const month=
-    // const day=
-    console.log(dataPrenotazione);
-
-
-    prezzoVendita = parseInt(prezzoVendita.innerHTML);
+    let prezzoNumero = parseInt(prezzoVendita.innerHTML);
     let urlAggiungi = `http://localhost:8080/api/prenotazione/utente/${utenteId}/evento/${prodottoId}`
-    let prenotazione = new Prenotazione(prezzoVendita.value, dataPrenotazione, quantitaPosti);
+    let prenotazione = new Prenotazione(prezzoNumero, dataPrenotazione, quantitaPosti);
+    console.log(prenotazione);
     fetch(urlAggiungi, {
         method: 'POST',
         headers: {
@@ -74,6 +64,8 @@ function aggiungi() {
         },
         body: JSON.stringify(prenotazione),
     });
+    window.location.reload();
+    elimina()
 }
 
 function calcolaTotale(totale = 0) {
@@ -84,13 +76,10 @@ function calcolaTotale(totale = 0) {
 }
 
 function elimina() {
-    event.preventDefault();
-    let prodottoId = event.target.getAttribute('id');
-    let urlElimina = `http://localhost:8080/api/prenotazione/utente/${utenteId}/evento/${prodottoId}`;
-    fetch(urlElimina, {
-        method: 'DELETE',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-    })
+   let carrello = localStorage.getItem('carrello');
+   carrello= JSON.parse(carrello);
+   console.log(carrello);
+   localStorage.setItem('carrello',null);
+   window.location.reload();
+   
 }
