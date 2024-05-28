@@ -370,32 +370,44 @@ body {
 @media only screen and (max-width: 2500px) {
     .content {
         margin-top: 5rem;
-        margin-left: 50rem;
+        margin-left: 25%;
         font-size: 130px;
+    }
+
+    #container-swiper {
+        position: relative;
+        transform: translateY(-250px);
+        z-index: 1;
     }
 
 }
 
 @media only screen and (max-width: 1240px) {
     .content {
-        margin-top: 9rem;
-        margin-left: 22.5rem;
+        margin-top: 5rem;
+        margin-left: 32%;
         font-size: 60px;
+    }
+
+    #container-swiper {
+        position: relative;
+        transform: translateY(-250px);
+        z-index: 1;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .content {
         margin-top: 5rem;
-        margin-left: 15rem;
+        margin-left: 35%;
         font-size: 40px;
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 425px) {
     .content {
-        margin-top: 2rem;
-        margin-left: 6.5rem;
+        margin-top: 0.5rem;
+        margin-left: 28%;
         font-size: 30px;
     }
 
@@ -405,7 +417,6 @@ body {
         align-items: center;
     }
 
-        
     .containerFooterLogo,
     .containerInfo {
         margin-bottom: 20px; /* Spazio tra le sezioni */
@@ -424,95 +435,19 @@ body {
         align-items: center;
     }
 
+    .title {
+        margin-top: 5rem;
+    }
+
+
+    
+
 }
 
-@media only screen and (max-width: 2500px){
-    #container-swiper {
-        position: relative;
-        transform: translateY(-250px);
-        z-index: 1;
-    }
-}
 
-@media only screen and (max-width: 2200px){
-    #container-swiper {
-        position: relative;
-        transform: translateY(-250px);
-        z-index: 1;
-    }
-}
 
-@media only screen and (max-width: 2000px){
-    #container-swiper {
-        position: relative;
-        transform: translateY(-250px);
-        z-index: 1;
-    }
-}
 
-@media only screen and (max-width: 1900px){
-    #container-swiper {
-        position: relative;
-        transform: translateY(-250px);
-        z-index: 1;
-    }
-}
 
-@media only screen and (max-width: 1680px){
-    #container-swiper {
-        position: relative;
-        transform: translateY(-250px);
-        z-index: 1;
-    }
-}
-
-@media only screen and (max-width: 1480px){
-    #container-swiper {
-        position: relative;
-        transform: translateY(-250px);
-        z-index: 1;
-    }
-}
-
-@media only screen and (max-width: 1240px){
-    #container-swiper {
-        position: relative;
-        transform: translateY(-250px);
-        z-index: 1;
-    }
-}
-
-@media only screen and (max-width: 1100px){
-    #container-swiper {
-        position: relative;
-        transform: translateY(-250px);
-        z-index: 1;
-    }
-}
-
-@media only screen and (max-width: 980px){
-    #container-swiper {
-        position: relative;
-        transform: translateY(-250px);
-        z-index: 1;
-    }
-}
-
-@media only screen and (max-width: 768px){
-    #container-swiper {
-        position: relative;
-        transform: translateY(-250px);
-        z-index: 1;
-    }
-}
-
-@media only screen and (max-width: 480px){
-    #container-swiper {
-        position: relative;
-        transform: translateY(-250px);
-        z-index: 1;
-    }
-}
 
 #container-swiper {
     position: absolute;
@@ -568,31 +503,29 @@ body {
     
 }
 
-@media only screen and (max-width: 768px){
-    .brAnnullato {
-        display: none;
-    }
-}
 
 @media only screen and (max-width: 985px){
     .contenitore-titolo {
         align-items: center;
     }
-}
 
-@media only screen and (max-width: 985px){
     .title {
         flex-direction: column;
         align-items: center;
         
     }
-}
-
-@media only screen and (max-width: 985px){
+    
     .testo-p {
         margin-left: 0;
         text-align: center;
         
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .brAnnullato {
+        display: none;
     }
 }
 
@@ -603,7 +536,7 @@ body {
     padding-top: 0;
 }
 
-    /* Limita la larghezza e altezza delle card */
+/* Limita la larghezza e altezza delle card */
 .card {
     max-width: 250px; /* Imposta la larghezza massima */
     margin: 0 auto; /* Centra la card */
@@ -619,10 +552,9 @@ body {
 .card img {
     width: 100%;
     height: auto; /* Mantiene il rapporto d'aspetto */
-    max-height: 100px; /* Imposta l'altezza massima, puoi modificarlo secondo le tue necessità */
+    max-height: 100px; /* Imposta l'altezza massima*/
 }
 
-/* Aggiorna anche i pulsanti e i body delle card se necessario */
 .card-body {
     padding: 1rem !important; /* Riduce il padding */
     background-color: #1D1D1D;
