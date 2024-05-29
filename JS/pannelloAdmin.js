@@ -7,9 +7,9 @@ if(ruoloUtente == null) {
     window.location.href = '../PAGES/errore.html';
 } else {
     administration.innerHTML = `
-                                <h1>Benvenuto nella sezione admin</h1>
-                                <button id="creation" type="button" class="btn btn-primary" style="margin-bottom: 8px">Crea un nuovo evento.</button>
-                                <button id="update" type="button" class="btn btn-secondary">Modifica un evento già presente.</button>
+                                <h1 class="adminTitle">Benvenuto nella sezione admin</h1>
+                                <button id="creation" type="button" class="btn btn-success fs-4" style="margin-bottom: 32px">Crea Evento</button>
+                                <button id="update" type="button" class="btn btn-info fs-4">Modifica Evento</button>
                            
                                 `;
     let bottoneCreazione = document.getElementById('creation');
