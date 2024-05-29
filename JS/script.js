@@ -5,17 +5,19 @@ loginUtente.innerHTML=ruoloUtente;
 if (ruoloUtente=="RUOLO_ADMIN") {
     loginUtente.innerHTML="Logout";
     loginUtente.addEventListener('click',logout);
-    text.innerHTML=`Sezione Admin per creare e aggiungere eventi`;
+    // text.innerHTML=`Sezione Admin per creare e aggiungere eventi`;
     let redirect = document.createElement('button');
-    redirect.innerHTML="vai alla sezione pannello";
+    redirect.innerHTML=" Sezione pannello Admin";
+    redirect.setAttribute("class","adminBtn");
     text.appendChild(redirect);
     redirect.addEventListener('click',redirectPannello);
 }else if(ruoloUtente=='RUOLO_UTENTE'){
     loginUtente.innerHTML="Logout";
     loginUtente.addEventListener('click',logout);
-    text.innerHTML=`Benvenuto ad Eventia `;
+    // text.innerHTML=`Benvenuto ad Eventia `;
     let carrello= document.createElement('button');
-    carrello.innerHTML="vai al tuo carrello";
+    carrello.innerHTML=" Il tuo carrello";
+    carrello.setAttribute("class","adminBtn");
     text.appendChild(carrello);
     carrello.addEventListener('click',vaiCarrello);
 }else{
