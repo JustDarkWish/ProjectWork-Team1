@@ -1,0 +1,10 @@
+img { 
+    max-width: 500px; 
+    max-height: 500px; 
+}
+button{
+    display: flex;
+    border: none;
+    margin-bottom: 1rem;
+}
+

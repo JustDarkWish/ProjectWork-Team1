@@ -1,9 +1,8 @@
-
-
 let img = document.querySelector('#img');
 let description = document.querySelector('#descrizioneEvento');
 let btnAggiungi = document.querySelector('#btnCarello'); 
-let prodottoId=localStorage.getItem('id')
+let prodottoId=localStorage.getItem('id');
+let btn=document.getElementById("btnBack");
 const parametriURL = window.location.search;
 const parametriParsURL = new URLSearchParams(parametriURL);
 
@@ -46,3 +45,8 @@ function aggiungi() {
         localStorage.setItem("carrello",JSON.stringify(arrayCarrello));
     })
 }
+
+function torna(){
+    window.location.href="/index.html";
+}
+btn.addEventListener('click',torna)

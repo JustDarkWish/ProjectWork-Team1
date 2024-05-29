@@ -1,4 +1,4 @@
-let btnCheckout = document.querySelector('#btnCheckout');
+
 let listaProdotti = document.querySelector('#listaProdotti');
 let checkboxDelete = document.querySelector('#checkboxDelete');
 let calcoloTotale = document.querySelector('#calcoloTotale');
@@ -64,13 +64,12 @@ function aggiungi() {
         },
         body: JSON.stringify(prenotazione),
     });
-    window.location.reload();
     elimina()
 }
 
 function calcolaTotale(totale = 0) {
     carrello.forEach(elemento => {
-        totale += elemento.price;
+        totale += elemento.prezzoListino;
         calcoloTotale.innerHTML = totale;
     })
 }
@@ -80,6 +79,7 @@ function elimina() {
    carrello= JSON.parse(carrello);
    console.log(carrello);
    localStorage.setItem('carrello',null);
-   window.location.reload();
+ 
+   window.location.href="/index.html";
    
 }
