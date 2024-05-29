@@ -95,6 +95,7 @@ async function elimina() {
         'Content-Type': 'application/json',
     },
 })
+window.location.reload();
 }
 async function modifica() {
     event.preventDefault();
@@ -108,7 +109,7 @@ async function modifica() {
         },
         body: JSON.stringify(evento),
       }); 
-
+      window.location.reload();
 }
 
 btnElimina.addEventListener('click',elimina);

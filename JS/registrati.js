@@ -4,7 +4,7 @@ let email = document.querySelector('#email');
 let password = document.querySelector('#password');
 let passwordDue = document.querySelector('#passwordDue');
 let dataNascita= document.getElementById('data');
-let ruolo = document.querySelector('#ruolo');
+// let ruolo = document.querySelector('#ruolo');
 let btn = document.querySelector('.btn');
 let btnLogout = document.querySelector('.btnLogout');
 const form = document.getElementById('registerForm');
@@ -24,11 +24,11 @@ class Utente{
 }
 function creaUtente(event) {
     event.preventDefault();
-
+    let ruolo="RUOLO_UTENTE";
     if (nameUtente.value !== '' && surname.value !== ''&& email.value !== '') {
         if(password.value === passwordDue.value) {
             if (controlloPass()) {
-                let utente= new Utente(nameUtente.value,surname.value,dataNascita.value,email.value,password.value,ruolo.value)
+                let utente= new Utente(nameUtente.value,surname.value,dataNascita.value,email.value,password.value,ruolo)
                 console.log(JSON.stringify(utente));
                 window.location.href ='../index.html';
                 fetch(url, {
