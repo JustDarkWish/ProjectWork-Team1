@@ -19,116 +19,141 @@
 
 <body data-bs-theme="dark">
 
-    <div class="wrapper">
+    <!-- <div class="wrapper"> -->
 
-        <!-- NAVBAR -->
+    <!-- NAVBAR -->
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="./img/Eventia_logo_PNG.webp" alt="Logo" height="40"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a id="home" class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                        </li>
-                        <li id="text">
-                        </li>
-                        <li class="nav-item">
-                            <button id="login" class="nav-link">Login</button>
-                        </li>
-                        <div class="dropdown">
-                            <a class="navbar-toggler-icon" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" href="PAGES/Cinema.html">Cinema</a></li>
-                                <li><a class="dropdown-item" href="PAGES/Mostra.html">Mostre</a></li>
-                                <li><a class="dropdown-item" href="PAGES/Concerti.html">Concerti</a></li>
-                                <li><a class="dropdown-item" href="PAGES/Teatro.html">Teatro</a></li>
-                            </ul>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        
-    
-            <!-- HEADER -->
-            <div class="containerOne">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
-                <div class="container_video">
-                    <label class="content">DIVERTIMENTO A 360°</label>
-                    <video src="img/video_hero.mp4" autoplay loop muted class="background-clip"></video>
-                </div>
-        
-            </div>
+        <div class="container-fluid">
 
+            <a class="navbar-brand" href="index.html"><img src="img/Eventia_logo_PNG.webp" alt="Logo" height="40"></a>
 
-            <!-- CAROSELLO -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-              <div class="containerTwo">
-                <div id="container-swiper" class="container text-center mt-5">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img id="imgMusica" src="img/concerti-definitivo.webp" class="card-img-top" alt="Un video bello">
-                                    <div class="card-body">
-                                        <!-- <h5 class="card-title">Musica</h5> -->
-                                        <!-- <p class="card-text">Eventi musicali</p> -->
-                                        <a href="PAGES/Concerti.html" id="bottoneInfo" class="btn btn-primary">Info eventi</a>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img id="imgTeatro" src="img/teatro-definitivo.webp" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <!-- <h5 class="card-title">Spettacolo</h5> -->
-                                        <!-- <p class="card-text">Eventi teatrali</p> -->
-                                        <a href="PAGES/Teatro.html" id="bottoneInfo" class="btn btn-primary">Info eventi</a>
-                                    </div>
-                                </div>
-                            </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img id="imgCinema" src="img/cinema-definitivo.webp" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <!-- <h5 class="card-title">Cinema</h5> -->
-                                        <!-- <p class="card-text">Eventi cinematografici</p> -->
-                                        <a href="PAGES/Cinema.html" id="bottoneInfo" class="btn btn-primary">Info eventi</a>
-                                    </div>
-                                </div>
-                            </div>
+                    <li class="nav-item">
+                        <a id="home" class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
 
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img id="imgMostre" src="img/mostre-finale.webp" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <!-- <h5 class="card-title">Mostre</h5> -->
-                                        <!-- <p class="card-text">Eventi artistici</p> -->
-                                        <a href="PAGES/Mostra.html" id="bottoneInfo" class="btn btn-primary">Info eventi</a>
-                                    </div>
-                                </div>
-                            </div>
+                    <li id="text"></li>
 
-                        </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                    <li class="nav-item">
+                        <button id="login" class="nav-link">Login</button>
+                    </li>
+
+                    <div class="dropdown">
+
+                        <a class="navbar-toggler-icon" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="PAGES/Cinema.html">Cinema</a></li>
+                            <li><a class="dropdown-item" href="PAGES/Mostra.html">Mostre</a></li>
+                            <li><a class="dropdown-item" href="PAGES/Concerti.html">Concerti</a></li>
+                            <li><a class="dropdown-item" href="PAGES/Teatro.html">Teatro</a></li>
+                        </ul>
 
                     </div>
-                </div>
+
+                </ul>
+
             </div>
+
+        </div>
+
+    </nav>
+        
+    
+    <!-- HEADER -->
+
+    <div class="containerOne">
+
+            <div class="container_video">
+                <label class="content">DIVERTIMENTO A 360°</label>
+                <video src="img/video_hero.mp4" autoplay loop muted class="background-clip"></video>
+            </div>
+        
+    </div>
+
+
+    <!-- CAROSELLO -->
+
+    <div class="containerTwo">
+
+        <div id="container-swiper" class="container text-center mt-5">
+
+            <div class="swiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+
+                        <div class="card">
+                            <img id="imgMusica" src="img/concerti-definitivo.webp" class="card-img-top" alt="Un video bello">
+
+                            <div class="card-body">
+                                <a href="PAGES/Concerti.html" id="bottoneInfo" class="btn btn-primary">Info eventi</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img id="imgTeatro" src="img/teatro-definitivo.webp" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <a href="PAGES/Teatro.html" id="bottoneInfo" class="btn btn-primary">Info eventi</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img id="imgCinema" src="img/cinema-definitivo.webp" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <a href="PAGES/Cinema.html" id="bottoneInfo" class="btn btn-primary">Info eventi</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img id="imgMostre" src="img/mostre-finale.webp" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <a href="PAGES/Mostra.html" id="bottoneInfo" class="btn btn-primary">Info eventi</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 
     <!-- MISSION -->
 
-    <section id="hero" class="position-relative container-fluid">
+    <!-- <div class="containerMission"></div> -->
+        <section id="hero" class="position-relative container-fluid">
+
         <div class="title">
             
             <div class="contenitore-titolo">
@@ -145,13 +170,11 @@
             <p class="testo-p">
                 La nostra missione è connettere persone e comunità attraverso esperienze indimenticabili. Offriamo una piattaforma intuitiva e inclusiva che permette a chiunque di creare, scoprire e partecipare a eventi di ogni tipo, dai concerti e spettacoli teatrali, alle conferenze, workshop e festival. Crediamo che gli eventi abbiano il potere di arricchire la vita delle persone, favorendo la condivisione della cultura, la costruzione di relazioni e la creazione di ricordi preziosi. Il nostro obiettivo è rendere la cultura e l'intrattenimento accessibili a tutti, promuovendo un mondo più connesso e vibrante. Unisciti a noi e vivi ogni evento come un'opportunità per crescere, divertirti e sentirti parte di qualcosa di più grande.
             </p>
-            <!-- <h2 id="text">Eventia è un progetto sviluppato da una giovane banda di programmatori che permette a chiunque
-                di poter creare e iscriversi ad eventi in giro per l'Italia, dagli spettacoli teatrali e di cabaret ai
-                film da premio oscar fino ad arrivare ai più grandi concerti...
-                vivi alla eventia vivi al italiana perchè la cultura è roba nostra.
-            </h2> -->
+
         </div>
-    </section>
+
+        </section>
+    </div>
 
     <!-- FOOTER -->
 

@@ -1,31 +1,17 @@
 /* Layout Flexbox */
+
 html, body {
     position: relative;
     height: 100%;
     margin: 0;
     padding: 0;
-}
-.adminBtn{
-    margin-top: 7px;
-    display: flex;
-    border: none;
-    align-items: bottom;
-    background-color: #1D1D1D;
-    font-size: 20px;
-    padding-left: 2rem;
-}
-.wrapper {
-    flex: 1;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #2b3035 !important;
-    color: white !important;
     font-family: "Lora" !important;
 }
 
+
+/* .wrapper {
+    flex: 1;
+} */
 
 /* NAVBAR */
 
@@ -41,6 +27,16 @@ body {
 #login {
     padding-left: 2rem;
     font-size: 20px;
+}
+
+.adminBtn{
+    margin-top: 7px;
+    display: flex;
+    border: none;
+    align-items: bottom;
+    background-color: #1D1D1D;
+    font-size: 20px;
+    padding-left: 2rem;
 }
 
 .dropdown {
@@ -67,15 +63,13 @@ body {
     align-items: baseline;
 }
 
-/* Altri stili */
+/* SWIPER */
 
 .containerTwo {
     position: relative;
-    z-index: 2; 
-    margin-top: 7vh; 
+    z-index: 2;
+    margin-top: 7vh;
 }
-
-/* SWIPER */
 
 .card-body {
     padding-bottom: 3rem !important;
@@ -120,7 +114,6 @@ body {
 
 .card-body {
     background-color: #1D1D1D;
-    /* border: 1px solid white; */
 }
 
 /* Stili personalizzati per il video di sfondo */
@@ -251,7 +244,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 1400px;
     overflow: hidden;
     z-index: -1;
     width: 100%;
@@ -374,6 +367,40 @@ body {
     padding-bottom: 3rem;
 }
 
+/* PAGINA ERRORE */
+
+.errorContainer {
+    display: flex;
+    width: 100%;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerDatiErrore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titoloPaginaErrore {
+    font-size: 128px;
+}
+
+.testoPaginaErrore {
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.logoErrorPage {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 300px;
+    height: 300px;
+}
+
+
 /* MEDIA QUERY */
 
 @media only screen and (max-width: 2500px) {
@@ -461,11 +488,6 @@ body {
         display: none;
     }
 }
-
-
-
-
-
 
 #container-swiper {
     position: absolute;
@@ -601,4 +623,3 @@ body {
 
     
 }
-

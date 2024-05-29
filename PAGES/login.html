@@ -18,64 +18,83 @@
     <!-- Navigation Bar -->
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
         <div class="container-fluid">
+
             <a class="navbar-brand" href="../index.html">
                 <img src="../img/Eventia_logo_PNG.webp" alt="Logo" height="40">
             </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        <a id="home" class="nav-link active" aria-current="page" href="../index.html">Home</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="../PAGES/register.html">Registrati</a>
+                        <a id="login" class="nav-link" href="../PAGES/register.html">Registrati</a>
                     </li>
+
                     <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Menu
-                        </a>
+
+                        <a class="navbar-toggler-icon" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="../PAGES/Cinema.html">Cinema</a></li>
                             <li><a class="dropdown-item" href="../PAGES/Mostra.html">Mostre</a></li>
                             <li><a class="dropdown-item" href="../PAGES/Concerti.html">Concerti</a></li>
                             <li><a class="dropdown-item" href="../PAGES/Teatro.html">Teatro</a></li>
                         </ul>
+
                     </div>
+
                 </ul>
+
             </div>
+
         </div>
+
     </nav>
 
     <!-- video-background -->
-<div class="videoLoginBg">
-    <video src="/img/videoBellino4.mp4" autoplay loop muted class="video-bellino"></video>
-</div>
+
+    <div class="videoLoginBg">
+        <video src="../img/videoBellino4.mp4" autoplay loop muted class="background-clip"></video>
+    </div>
 
     <!-- Funzione Login -->
 
     <div class="container">
+        
         <div class="row justify-content-center">
 
             <div class="contenitore-login col-md-8 col-lg-4">
                 
                 <h1 class="titoloLogin">Accedi</h1>
-                <form id="loginForm">
-                    <div class="form">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="inputRegister" name="email" required>
-                        <label for="password">Password</label>
-                        <input type="password" id="password" class="inputRegister" name="password" required>
-                    </div>
-                    <div class="containerLoginRegister">
-                        <button type="button" class="btnLogin" id="btnLogin">Login</button>
-                        <p class="nonRegistered">Non sei ancora registrato?</p>
-                        <a class="registrati-a" href="../PAGES/register.html">Registrati!</a>
-                    </div>
+
+                    <form id="loginForm">
+
+                        <div class="form">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="inputRegister" name="email" required>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" class="inputRegister" name="password" required>
+                        </div>
+
+                        <div class="containerLoginRegister">
+                            <button type="button" class="btnLogin" id="btnLogin">Login</button>
+                            <p class="nonRegistered">Non sei ancora registrato?</p>
+                            <a class="registrati-a" href="../PAGES/register.html">Registrati!</a>
+                        </div>
+
                 </form>
                 
             </div>
@@ -86,6 +105,7 @@
     <!-- FOOTER -->
 
     <footer class="containerFooter">
+
         <div class="containerFooterLogo">
             <a href="index.html"><img src="../img/Eventia_logo_PNG.webp" class="logoFooter" alt="logo del sito nel footer"></a>
         </div>
@@ -121,11 +141,7 @@
 
     </footer>
 
-    <div id="erroriPassword">
-
-    </div>
-    
-    
+    <div id="erroriPassword"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
