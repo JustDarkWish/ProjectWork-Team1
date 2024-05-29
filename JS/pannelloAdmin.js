@@ -7,7 +7,7 @@ if(ruoloUtente == null) {
     window.location.href = '../PAGES/errore.html';
 } else {
     administration.innerHTML = `
-                                <h1 class="adminTitle">Benvenuto nella sezione admin</h1>
+                                <h1 class="adminTitle">Benvenuto nel panello Amministratore</h1>
                                 <button id="creation" type="button" class="btn btn-success fs-4" style="margin-bottom: 32px">Crea Evento</button>
                                 <button id="update" type="button" class="btn btn-info fs-4">Modifica Evento</button>
                            
