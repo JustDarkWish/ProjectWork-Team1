@@ -194,15 +194,11 @@ html, body {
 
 .noBarraLink {
     text-decoration: none;
+    color: white;
 }
 
 .containerSocials {
     display: flex;
-}
-
-.fonteIcone {
-    text-decoration: none;
-    
 }
 
 /* LOGIN */
@@ -541,25 +537,6 @@ html, body {
     display: flex;
     align-items: center;
     
-}
-
-
-@media only screen and (max-width: 985px){
-    .contenitore-titolo {
-        align-items: center;
-    }
-
-    .title {
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    
-    .testo-p {
-        margin-left: 0;
-        text-align: center;
-        
-    }
 }
 
 
