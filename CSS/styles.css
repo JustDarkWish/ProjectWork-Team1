@@ -5,7 +5,15 @@ html, body {
     margin: 0;
     padding: 0;
 }
-
+.adminBtn{
+    margin-top: 7px;
+    display: flex;
+    border: none;
+    align-items: bottom;
+    background-color: #1D1D1D;
+    font-size: 20px;
+    padding-left: 2rem;
+}
 .wrapper {
     flex: 1;
 }
@@ -17,6 +25,7 @@ body {
     color: white !important;
     font-family: "Lora" !important;
 }
+
 
 /* NAVBAR */
 

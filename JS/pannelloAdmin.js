@@ -3,7 +3,7 @@ let administration = document.querySelector('#adminSection');
 
 if(ruoloUtente == null) {
     window.location.href = '../index.html';
-} else if (ruoloUtente == 'ROLE_USER') {
+} else if (ruoloUtente == 'RUOLO_UTENTE') {
     window.location.href = '../PAGES/errore.html';
 } else {
     administration.innerHTML = `
